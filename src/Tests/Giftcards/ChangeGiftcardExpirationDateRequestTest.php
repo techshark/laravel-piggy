@@ -5,7 +5,7 @@ namespace TechShark\LaravelPiggy\Tests\Giftcards;
 
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
-use TechShark\LaravelPiggy\SDK\Requests\Interfaces\PiggySDKParameterInterface;
+use TechShark\LaravelPiggy\SDK\Requests\Interfaces\PiggyParameterInterface;
 use TechShark\LaravelPiggy\SDK\Requests\Parameters\Giftcards\ChangeGiftcardExpirationDateRequestParameter;
 
 /**
@@ -82,10 +82,10 @@ class ChangeGiftcardExpirationDateRequestTest extends TestCase
     }
 
     /**
-     * @return PiggySDKParameterInterface
+     * @return PiggyParameterInterface
      * @throws \Exception
      */
-    private function getSDKRequestObject(): PiggySDKParameterInterface
+    private function getSDKRequestObject(): PiggyParameterInterface
     {
         // add 1 day.
         $dateInterval = new \DateInterval('P1D');
@@ -98,10 +98,10 @@ class ChangeGiftcardExpirationDateRequestTest extends TestCase
     }
 
     /**
-     * @return PiggySDKParameterInterface
+     * @return PiggyParameterInterface
      * @throws \Exception
      */
-    private function getInvalidSDKRequestObject(): PiggySDKParameterInterface
+    private function getInvalidSDKRequestObject(): PiggyParameterInterface
     {
         // Subtract 1 day
         $dateInterval = new \DateInterval('P1D');

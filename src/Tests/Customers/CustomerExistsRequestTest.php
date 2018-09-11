@@ -5,7 +5,7 @@ namespace TechShark\LaravelPiggy\Tests\Customers;
 
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
-use TechShark\LaravelPiggy\SDK\Requests\Interfaces\PiggySDKParameterInterface;
+use TechShark\LaravelPiggy\SDK\Requests\Interfaces\PiggyParameterInterface;
 use TechShark\LaravelPiggy\SDK\Requests\Parameters\Customers\CustomerExistsRequestParameter;
 
 /**
@@ -78,9 +78,9 @@ class CustomerExistsRequestTest extends TestCase
     }
 
     /**
-     * @return PiggySDKParameterInterface
+     * @return PiggyParameterInterface
      */
-    private function getSDKRequestObject(): PiggySDKParameterInterface
+    private function getSDKRequestObject(): PiggyParameterInterface
     {
         return new CustomerExistsRequestParameter(
             'example@example.com',
@@ -89,9 +89,9 @@ class CustomerExistsRequestTest extends TestCase
     }
 
     /**
-     * @return PiggySDKParameterInterface
+     * @return PiggyParameterInterface
      */
-    private function getInvalidSDKRequestObject(): PiggySDKParameterInterface
+    private function getInvalidSDKRequestObject(): PiggyParameterInterface
     {
         return new CustomerExistsRequestParameter(
             'example@example.com',

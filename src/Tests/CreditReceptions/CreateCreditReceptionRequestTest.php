@@ -5,7 +5,7 @@ namespace TechShark\LaravelPiggy\Tests\CreditReceptions;
 
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
-use TechShark\LaravelPiggy\SDK\Requests\Interfaces\PiggySDKParameterInterface;
+use TechShark\LaravelPiggy\SDK\Requests\Interfaces\PiggyParameterInterface;
 use TechShark\LaravelPiggy\SDK\Requests\Parameters\CreditReceptions\CreateCreditReceptionRequestParameter;
 
 /**
@@ -81,9 +81,9 @@ class CreateCreditReceptionRequestTest extends TestCase
     }
 
     /**
-     * @return PiggySDKParameterInterface
+     * @return PiggyParameterInterface
      */
-    private function getSDKRequestObject(): PiggySDKParameterInterface
+    private function getSDKRequestObject(): PiggyParameterInterface
     {
         return new CreateCreditReceptionRequestParameter(
             1,
@@ -97,9 +97,9 @@ class CreateCreditReceptionRequestTest extends TestCase
     }
 
     /**
-     * @return PiggySDKParameterInterface
+     * @return PiggyParameterInterface
      */
-    private function getInvalidSDKRequestObject(): PiggySDKParameterInterface
+    private function getInvalidSDKRequestObject(): PiggyParameterInterface
     {
         return new CreateCreditReceptionRequestParameter(
             1,

@@ -7,7 +7,7 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\Request;
 use Psr\Http\Message\ResponseInterface;
 use TechShark\LaravelPiggy\Managers\PiggyManager;
-use TechShark\LaravelPiggy\SDK\Requests\Interfaces\PiggySDKParameterInterface;
+use TechShark\LaravelPiggy\SDK\Requests\Interfaces\PiggyRequestInterface;
 
 /**
  * Class PiggySDK
@@ -42,13 +42,13 @@ class PiggySDK
     /**
      * Fire an API call.
      *
-     * @param PiggySDKParameterInterface $SDKRequest
+     * @param PiggyRequestInterface $SDKRequest
      *
      * @return mixed|\Psr\Http\Message\ResponseInterface
      *
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
-    public function call(PiggySDKParameterInterface $SDKRequest): ResponseInterface
+    public function call(PiggyRequestInterface $SDKRequest): ResponseInterface
     {
         $fullUrl = $this->buildUrl($SDKRequest->getEndpoint(), $SDKRequest->getArguments(), $SDKRequest->getHttpMethod());
 

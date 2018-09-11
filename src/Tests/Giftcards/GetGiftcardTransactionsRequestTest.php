@@ -4,7 +4,7 @@ declare(strict_types=1);
 namespace TechShark\LaravelPiggy\Tests\Giftcards;
 
 use PHPUnit\Framework\TestCase;
-use TechShark\LaravelPiggy\SDK\Requests\Interfaces\PiggySDKParameterInterface;
+use TechShark\LaravelPiggy\SDK\Requests\Interfaces\PiggyParameterInterface;
 use TechShark\LaravelPiggy\SDK\Requests\Parameters\Giftcards\GetGiftcardTransactionsRequestParameter;
 
 /**
@@ -71,9 +71,9 @@ class GetGiftcardTransactionsRequestTest extends TestCase
     }
 
     /**
-     * @return PiggySDKParameterInterface
+     * @return PiggyParameterInterface
      */
-    private function getSDKRequestObject(): PiggySDKParameterInterface
+    private function getSDKRequestObject(): PiggyParameterInterface
     {
         return new GetGiftcardTransactionsRequestParameter(
             'w0101d'
