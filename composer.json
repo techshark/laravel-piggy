@@ -15,7 +15,7 @@
         "guzzlehttp/guzzle": "^6.3",
         "ramsey/uuid": "^3.8",
         "myclabs/php-enum": "^1.6",
-        "phpunit/phpunit": "~6.0"
+        "phpunit/phpunit": ">6.0"
     },
     "require-dev": {
     },
