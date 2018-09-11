@@ -11,7 +11,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.0",
-        "laravel/laravel": "^5.5",
+        "laravel/framework": "5.*",
         "guzzlehttp/guzzle": "^6.3",
         "ramsey/uuid": "^3.8",
         "myclabs/php-enum": "^1.6",
