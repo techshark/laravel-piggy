@@ -61,9 +61,10 @@ class PiggySDK
             $SDKRequest->getHttpMethod(),
             $fullUrl,
             [
-                'piggy-api-key' => $this->piggyManager->getApiKey()
+                'piggy-api-key' => $this->piggyManager->getApiKey(),
+                'Content-Type' => 'application/x-www-form-urlencoded'
             ],
-            $body
+            http_build_query($body, '', '&')
         );
 
         return $this->guzzleClient->send($request);
