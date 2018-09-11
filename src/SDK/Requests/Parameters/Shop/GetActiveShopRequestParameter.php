@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace TechShark\LaravelPiggy\SDK\Requests\Parameters\Shop;
 
-use TechShark\LaravelPiggy\SDK\Requests\Interfaces\PiggySDKParameterInterface;
+use TechShark\LaravelPiggy\SDK\Requests\Interfaces\PiggyParameterInterface;
 
 /**
  * Class GetActiveShopRequestParameter
@@ -11,7 +11,7 @@ use TechShark\LaravelPiggy\SDK\Requests\Interfaces\PiggySDKParameterInterface;
  * @author Tyler Brennan < info@techshark.nl >
  * @version 1.0
  */
-class GetActiveShopRequestParameter implements PiggySDKParameterInterface
+class GetActiveShopRequestParameter implements PiggyParameterInterface
 {
     /**
      * @var string

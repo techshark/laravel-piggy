@@ -4,7 +4,7 @@ declare(strict_types=1);
 namespace TechShark\LaravelPiggy\SDK\Requests\Parameters\Giftcards;
 
 use PHPUnit\Framework\ExpectationFailedException;
-use TechShark\LaravelPiggy\SDK\Requests\Interfaces\PiggySDKParameterInterface;
+use TechShark\LaravelPiggy\SDK\Requests\Interfaces\PiggyParameterInterface;
 
 /**
  * Class ChangeGiftcardExpirationDateRequestParameter
@@ -12,7 +12,7 @@ use TechShark\LaravelPiggy\SDK\Requests\Interfaces\PiggySDKParameterInterface;
  * @author Tyler Brennan < info@techshark.nl >
  * @version 1.0
  */
-class ChangeGiftcardExpirationDateRequestParameter implements PiggySDKParameterInterface
+class ChangeGiftcardExpirationDateRequestParameter implements PiggyParameterInterface
 {
     /**
      * @var string

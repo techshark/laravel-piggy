@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace TechShark\LaravelPiggy\SDK\Requests\Parameters\Giftcards;
 
-use TechShark\LaravelPiggy\SDK\Requests\Interfaces\PiggySDKParameterInterface;
+use TechShark\LaravelPiggy\SDK\Requests\Interfaces\PiggyParameterInterface;
 
 /**
  * Class GetGiftcardTransactionsRequestParameter
@@ -11,7 +11,7 @@ use TechShark\LaravelPiggy\SDK\Requests\Interfaces\PiggySDKParameterInterface;
  * @author Tyler Brennan < info@techshark.nl >
  * @version 1.0
  */
-class GetGiftcardTransactionsRequestParameter implements PiggySDKParameterInterface
+class GetGiftcardTransactionsRequestParameter implements PiggyParameterInterface
 {
     /**
      * @var string

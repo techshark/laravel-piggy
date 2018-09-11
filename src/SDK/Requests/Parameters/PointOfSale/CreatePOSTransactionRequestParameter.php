@@ -4,7 +4,7 @@ declare(strict_types=1);
 namespace TechShark\LaravelPiggy\SDK\Requests\Parameters\PointOfSale;
 
 use Ramsey\Uuid\UuidInterface;
-use TechShark\LaravelPiggy\SDK\Requests\Interfaces\PiggySDKParameterInterface;
+use TechShark\LaravelPiggy\SDK\Requests\Interfaces\PiggyParameterInterface;
 
 /**
  * Class CreatePOSTransactionRequestParameter
@@ -12,7 +12,7 @@ use TechShark\LaravelPiggy\SDK\Requests\Interfaces\PiggySDKParameterInterface;
  * @author Tyler Brennan < info@techshark.nl >
  * @version 1.0
  */
-class CreatePOSTransactionRequestParameter implements PiggySDKParameterInterface
+class CreatePOSTransactionRequestParameter implements PiggyParameterInterface
 {
     /**
      * @var int

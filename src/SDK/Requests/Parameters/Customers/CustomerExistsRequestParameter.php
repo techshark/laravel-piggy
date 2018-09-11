@@ -4,7 +4,7 @@ declare(strict_types=1);
 namespace TechShark\LaravelPiggy\SDK\Requests\Parameters\Customers;
 
 use PHPUnit\Framework\Assert;
-use TechShark\LaravelPiggy\SDK\Requests\Interfaces\PiggySDKParameterInterface;
+use TechShark\LaravelPiggy\SDK\Requests\Interfaces\PiggyParameterInterface;
 
 /**
  * Class CustomerExistsRequestParameter
@@ -12,7 +12,7 @@ use TechShark\LaravelPiggy\SDK\Requests\Interfaces\PiggySDKParameterInterface;
  * @author Tyler Brennan < info@techshark.nl >
  * @version 1.0
  */
-class CustomerExistsRequestParameter implements PiggySDKParameterInterface
+class CustomerExistsRequestParameter implements PiggyParameterInterface
 {
     /**
      * @var null|string

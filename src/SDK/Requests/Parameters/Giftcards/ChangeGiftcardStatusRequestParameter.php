@@ -4,7 +4,7 @@ declare(strict_types=1);
 namespace TechShark\LaravelPiggy\SDK\Requests\Parameters\Giftcards;
 
 use TechShark\LaravelPiggy\Enums\GiftcardStatus;
-use TechShark\LaravelPiggy\SDK\Requests\Interfaces\PiggySDKParameterInterface;
+use TechShark\LaravelPiggy\SDK\Requests\Interfaces\PiggyParameterInterface;
 
 /**
  * Class ChangeGiftcardStatusRequestParameter
@@ -12,7 +12,7 @@ use TechShark\LaravelPiggy\SDK\Requests\Interfaces\PiggySDKParameterInterface;
  * @author Tyler Brennan < info@techshark.nl >
  * @version 1.0
  */
-class ChangeGiftcardStatusRequestParameter implements PiggySDKParameterInterface
+class ChangeGiftcardStatusRequestParameter implements PiggyParameterInterface
 {
     /**
      * @var string

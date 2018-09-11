@@ -1,15 +1,14 @@
 <?php
-declare(strict_types=1);
 
 namespace TechShark\LaravelPiggy\SDK\Requests\Interfaces;
 
 /**
- * Class PiggySDKParameterInterface
+ * Interface PiggyRequestInterface
  *
  * @author Tyler Brennan < info@techshark.nl >
  * @version 1.0
  */
-interface PiggySDKParameterInterface
+interface PiggyRequestInterface
 {
     /**
      * Should return the endpoint to which the
@@ -25,7 +24,10 @@ interface PiggySDKParameterInterface
      * Should return an array of arguments
      * the SDK should include in the API request.
      *
-     * Example: ['shop_id' => 1]
+     * Ideally the arguments should be validated when calling this function.
+     * @see \TechShark\LaravelPiggy\SDK\Requests\Interfaces\PiggyParameterInterface::validateRequirements
+     *
+     * Example: ['shopId' => 1]
      *
      * @return array
      */
@@ -40,15 +42,4 @@ interface PiggySDKParameterInterface
      * @return string
      */
     public function getHttpMethod(): string;
-
-    /**
-     * Should validate all requirements set
-     * by the Piggy loyalty API on the specific
-     * request.
-     *
-     * Example: 'Email' can only be null if 'QrCode' is not null.
-     *
-     * @return bool
-     */
-    public function validateRequirements(): bool;
 }

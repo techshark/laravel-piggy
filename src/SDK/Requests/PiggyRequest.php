@@ -3,8 +3,8 @@ declare(strict_types=1);
 
 namespace TechShark\LaravelPiggy\SDK\Requests;
 
-use TechShark\LaravelPiggy\SDK\Requests\Interfaces\PiggySDKParameterInterface;
-use TechShark\LaravelPiggy\SDK\Requests\Interfaces\PiggySDKRequestInterface;
+use TechShark\LaravelPiggy\SDK\Requests\Interfaces\PiggyParameterInterface;
+use TechShark\LaravelPiggy\SDK\Requests\Interfaces\PiggyRequestInterface;
 
 /**
  * Class PiggyRequest
@@ -12,19 +12,19 @@ use TechShark\LaravelPiggy\SDK\Requests\Interfaces\PiggySDKRequestInterface;
  * @author Tyler Brennan < info@techshark.nl >
  * @version 1.0
  */
-class PiggyRequest implements PiggySDKRequestInterface
+class PiggyRequest implements PiggyRequestInterface
 {
     /**
-     * @var PiggySDKParameterInterface
+     * @var PiggyParameterInterface
      */
     private $piggySDKParameters;
 
     /**
      * PiggyRequest constructor.
      *
-     * @param PiggySDKParameterInterface $piggySDKParameters
+     * @param PiggyParameterInterface $piggySDKParameters
      */
-    public function __construct(PiggySDKParameterInterface $piggySDKParameters)
+    public function __construct(PiggyParameterInterface $piggySDKParameters)
     {
         $this->piggySDKParameters = $piggySDKParameters;
     }

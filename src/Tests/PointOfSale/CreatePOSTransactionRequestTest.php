@@ -5,7 +5,7 @@ namespace TechShark\LaravelPiggy\Tests\PointOfSale;
 
 use PHPUnit\Framework\TestCase;
 use Ramsey\Uuid\Uuid;
-use TechShark\LaravelPiggy\SDK\Requests\Interfaces\PiggySDKParameterInterface;
+use TechShark\LaravelPiggy\SDK\Requests\Interfaces\PiggyParameterInterface;
 use TechShark\LaravelPiggy\SDK\Requests\Parameters\PointOfSale\CreatePOSTransactionRequestParameter;
 
 /**
@@ -96,9 +96,9 @@ class CreatePOSTransactionRequestTest extends TestCase
     }
 
     /**
-     * @return PiggySDKParameterInterface
+     * @return PiggyParameterInterface
      */
-    private function getSDKRequestObject(): PiggySDKParameterInterface
+    private function getSDKRequestObject(): PiggyParameterInterface
     {
         return new CreatePOSTransactionRequestParameter(
             1,
