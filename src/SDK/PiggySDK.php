@@ -66,10 +66,7 @@ class PiggySDK
             $body
         );
 
-        $response = $this->guzzleClient->send($request);
-        $unserializedResponse = @unserialize($request, null);
-
-        return $unserializedResponse ?: $response;
+        return $this->guzzleClient->send($request);
     }
 
     /**
